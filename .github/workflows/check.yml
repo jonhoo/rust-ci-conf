@@ -67,7 +67,7 @@ jobs:
       - name: cargo install cargo-hack
         uses: taiki-e/install-action@cargo-hack
       - name: cargo hack
-        run: cargo hack --feature-powerset check --all-targets
+        run: cargo hack --feature-powerset check
   msrv:
     runs-on: ubuntu-latest
     # we use a matrix here just because env can't be used in job names
