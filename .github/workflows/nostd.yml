@@ -1,5 +1,5 @@
 # This workflow checks whether the library is able to run without the std library (e.g., embedded).
-# This entire file should be removed if this crate does not support no-std See check.yml for
+# This entire file should be removed if this crate does not support no-std. See check.yml for
 # information about how the concurrency cancelation and workflow triggering works
 permissions:
   contents: read
