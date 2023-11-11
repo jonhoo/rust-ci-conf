@@ -40,7 +40,7 @@ jobs:
     name: ubuntu / beta / updated
     # There's no point running this if no Cargo.lock was checked in in the first place, since we'd
     # just redo what happened in the regular test job. Unfortunately, hashFiles only works in if on
-    # steps, so we repeat it. if: hashFiles('Cargo.lock') != ''
+    # steps, so we repeat it.
     steps:
       - uses: actions/checkout@v3
         with:
