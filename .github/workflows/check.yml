@@ -130,5 +130,5 @@ jobs:
         uses: dtolnay/rust-toolchain@b3b07ba8b418998c39fb20f53e8b695cdcc8de1b # branch=master
         with:
           toolchain: ${{ matrix.msrv }}
-      - name: cargo +${{ matrix.msrv }} check
-        run: cargo check
+      - name: cargo +${{ matrix.msrv }} check --lib --bins --examples
+        run: cargo check --lib --bins --examples
