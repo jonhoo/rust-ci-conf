@@ -46,7 +46,7 @@ jobs:
   minimal:
     # This action chooses the oldest version of the dependencies permitted by Cargo.toml to ensure
     # that this crate is compatible with the minimal version that this crate and its dependencies
-    # require. This will pickup issues where this create relies on functionality that was introduced
+    # require. This will pickup issues where this crate relies on functionality that was introduced
     # later than the actual version specified (e.g., when we choose just a major version, but a
     # method was added after this version).
     #
