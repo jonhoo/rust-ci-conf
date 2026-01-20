@@ -147,7 +147,7 @@ jobs:
           toolchain: stable
           components: llvm-tools-preview
       - name: cargo install cargo-llvm-cov
-        uses: taiki-e/install-action@3575e532701a5fc614b0c842e4119af4cc5fd16d # tag=v2.62.60
+        uses: taiki-e/install-action@a983ca795126a4be4e8a44879ac5c4c3ef66cae1 # tag=v2.65.11
         with:
           tool: cargo-llvm-cov
       - name: cargo generate-lockfile
