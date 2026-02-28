@@ -8,6 +8,8 @@ updates:
     directory: /
     schedule:
       interval: daily
+    # already the default for libraries, but we want it for everything
+    versioning-strategy: "increase-if-necessary"
     ignore:
       - dependency-name: "*"
         # patch and minor updates don't matter for libraries as consumers of this library build
