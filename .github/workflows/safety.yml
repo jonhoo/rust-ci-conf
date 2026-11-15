@@ -52,7 +52,7 @@ jobs:
         if: always()
         run: cargo test --all-features --target x86_64-unknown-linux-gnu
         env:
-          LSAN_OPTIONS: "suppressions=lsan-suppressions.txt"
+          LSAN_OPTIONS: "suppressions=lsan-suppressions.txt:fast_unwind_on_malloc=0"
           RUSTFLAGS: "-Z sanitizer=leak"
   miri:
     runs-on: ubuntu-latest
